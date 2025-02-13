@@ -1,0 +1,22 @@
+{
+  "name": "iowa-egl",
+  "version": "1.0.0",
+  "description": "Static website for Iowa EGL and J-Fashion community.",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass --watch styles/:dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileyborchert/iowa-egl.git"
+  },
+  "author": "Bailey Borchert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baileyborchert/iowa-egl/issues"
+  },
+  "homepage": "https://github.com/baileyborchert/iowa-egl#readme",
+  "dependencies": {
+    "sass": "^1.84.0"
+  }
+}

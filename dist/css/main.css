@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Leckerli One";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #FF9EC6;
+  color: #FFF;
+}
+header .header__inner {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
+}
+header .header__inner * {
+  filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
+}
+header .header__logo {
+  filter: drop-shadow(1px 1px #B46085) drop-shadow(1px -1px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
+}
+header .header__title {
+  font-family: "Leckerli One";
+  font-size: 40px;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1280px;
+}
+
+/*# sourceMappingURL=main.css.map */
