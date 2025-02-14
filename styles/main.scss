@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-
-@import 'typography';
+@use 'typography';
 
 $pink: #FF9EC6;
 $dark-pink: #B46085;
@@ -28,13 +26,14 @@ header {
 
   .header {
     &__inner {
-      align-items: center;
+      align-items: flex-end;
       display: flex;
       flex-flow: row nowrap;
+      justify-content: space-between;
       gap: 20px;
       padding: 20px;
 
-      * {
+      span {
         filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
       }
     }
@@ -42,6 +41,25 @@ header {
     &__logo {
       filter: drop-shadow(1px 1px $dark-pink) drop-shadow(1px -1px $dark-pink)
       drop-shadow(-1px 1px $dark-pink) drop-shadow(-1px -1px $dark-pink);
+
+      &-wrap {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+      }
+    }
+
+    &__nav {
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 50px;
+      
+      a {
+        font-family: "Cooper Black";
+        font-size: 36px;
+      }
     }
 
     &__title {

@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
 @font-face {
-  font-family: 'Leckerli One';
+  font-family: "Leckerli One";
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/LeckerliOne-Regular.otf") format("opentype");
 }
-
 @font-face {
-  font-family: 'Cooper Black';
+  font-family: "Cooper Black";
   font-style: normal;
   font-weight: normal;
   src: url("../../fonts/CooperBlack-Std.otf") format("opentype");
 }
-
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Leckerli One";
 }
@@ -23,3 +19,5 @@ a {
   color: unset;
   text-decoration: none;
 }
+
+/*# sourceMappingURL=typography.css.map */

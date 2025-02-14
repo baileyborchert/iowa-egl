@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@font-face {
+  font-family: "Leckerli One";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/LeckerliOne-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Cooper Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../fonts/CooperBlack-Std.otf") format("opentype");
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Leckerli One";
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }
 
 body {
@@ -22,17 +39,34 @@ header::after {
   width: 100vw;
 }
 header .header__inner {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
   gap: 20px;
   padding: 20px;
 }
-header .header__inner * {
+header .header__inner span {
   filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
 }
 header .header__logo {
   filter: drop-shadow(1px 1px #B46085) drop-shadow(1px -1px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
+}
+header .header__logo-wrap {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+}
+header .header__nav {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+}
+header .header__nav a {
+  font-family: "Cooper Black";
+  font-size: 36px;
 }
 header .header__title {
   font-family: "Leckerli One";
