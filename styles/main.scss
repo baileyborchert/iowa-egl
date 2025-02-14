@@ -13,14 +13,25 @@ body {
 }
 
 header {
-  background: $pink;
+  background: content-box $pink;
   color: $text-inverse;
+
+  &::after {
+    background: url(../../images/header-lace.png) 0 0 repeat-x;
+    background-size: 50px;
+    content: "";
+    display: block;
+    height: 37px;
+    position: fixed;
+    width: 100vw;
+  }
 
   .header {
     &__inner {
       align-items: center;
       display: flex;
       flex-flow: row nowrap;
+      gap: 20px;
       padding: 20px;
 
       * {
@@ -35,7 +46,7 @@ header {
 
     &__title {
       font-family: "Leckerli One";
-      font-size: 40px;
+      font-size: 50px;
     }
   }
 }

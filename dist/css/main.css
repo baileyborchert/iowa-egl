@@ -9,13 +9,23 @@ body {
 }
 
 header {
-  background: #FF9EC6;
+  background: content-box #FF9EC6;
   color: #FFF;
+}
+header::after {
+  background: url(../../images/header-lace.png) 0 0 repeat-x;
+  background-size: 50px;
+  content: "";
+  display: block;
+  height: 37px;
+  position: fixed;
+  width: 100vw;
 }
 header .header__inner {
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
+  gap: 20px;
   padding: 20px;
 }
 header .header__inner * {
@@ -26,7 +36,7 @@ header .header__logo {
 }
 header .header__title {
   font-family: "Leckerli One";
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .container {
