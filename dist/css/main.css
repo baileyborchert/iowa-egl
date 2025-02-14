@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Leckerli+One&family=Parkinsans:wght@300..800&display=swap");
 @font-face {
   font-family: "Leckerli One";
   font-style: normal;
@@ -20,7 +20,15 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+  font-family: "Bellota";
+  font-size: 20px;
+  text-align: justify;
+}
+
 body {
+  background-color: #FFFAFD;
   margin: 0;
   padding: 0;
 }
@@ -28,6 +36,9 @@ body {
 header {
   background: content-box #FF9EC6;
   color: #FFF;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 header::after {
   background: url(../../images/header-lace.png) 0 0 repeat-x;
@@ -43,8 +54,8 @@ header .header__inner {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
+  gap: 40px;
+  padding: 20px 40px;
 }
 header .header__inner span {
   filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
@@ -76,6 +87,37 @@ header .header__title {
 .container {
   margin-inline: auto;
   max-width: 1280px;
+  padding-inline: 40px;
+}
+
+main {
+  color: #68545C;
+  padding-block-start: 108px;
+}
+
+.lace {
+  position: absolute;
+  margin-inline: auto;
+  max-width: 1280px;
+  top: -120px;
+  width: 100%;
+  z-index: -1;
+}
+
+.page {
+  margin-inline: auto;
+}
+.page__content p {
+  margin-inline: auto;
+  max-width: 780px;
+}
+.page__title {
+  color: #FF9EC6;
+  filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
+  font-size: 72px;
+  margin-block-end: 120px;
+  margin-block-start: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,15 @@
 @use 'typography';
 
+$background-light-pink: #FFFAFD;
 $pink: #FF9EC6;
 $dark-pink: #B46085;
+$text: #68545C;
 $text-inverse: #FFF;
+$text-drop-shadow: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px $dark-pink) drop-shadow(-1px 1px $dark-pink) drop-shadow(-1px -1px $dark-pink);
 $max-width: 1280px;
 
 body {
+  background-color: $background-light-pink;
   margin: 0;
   padding: 0;
 }
@@ -13,6 +17,9 @@ body {
 header {
   background: content-box $pink;
   color: $text-inverse;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 
   &::after {
     background: url(../../images/header-lace.png) 0 0 repeat-x;
@@ -30,11 +37,11 @@ header {
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
-      gap: 20px;
-      padding: 20px;
+      gap: 40px;
+      padding: 20px 40px;
 
       span {
-        filter: drop-shadow(2px 4px #B46085) drop-shadow(2px -2px #B46085) drop-shadow(-1px 1px #B46085) drop-shadow(-1px -1px #B46085);
+        filter: $text-drop-shadow;
       }
     }
 
@@ -72,4 +79,37 @@ header {
 .container {
   margin-inline: auto;
   max-width: $max-width;
+  padding-inline: 40px;
+}
+
+main {
+  color: $text;
+  padding-block-start: 108px; // header height
+}
+
+.lace {
+  position: absolute;
+  margin-inline: auto;
+  max-width: $max-width;
+  top: -120px;
+  width: 100%;
+  z-index: -1;
+}
+
+.page {
+  margin-inline: auto;
+
+  &__content p {
+    margin-inline: auto;
+    max-width: 780px;
+  }
+
+  &__title {
+    color: $pink;
+    filter: $text-drop-shadow;
+    font-size: 72px;
+    margin-block-end: 120px;
+    margin-block-start: 40px;
+    text-align: center;
+  }
 }

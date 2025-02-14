@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Leckerli+One&family=Parkinsans:wght@300..800&display=swap');
 
 @font-face {
   font-family: 'Leckerli One';
@@ -22,4 +22,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: unset;
   text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  font-family: "Bellota";
+  font-size: 20px;
+  text-align: justify;
 }
