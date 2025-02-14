@@ -26,6 +26,9 @@ p {
   font-size: 20px;
   text-align: justify;
 }
+p a {
+  text-decoration: underline;
+}
 
 body {
   background-color: #FFFAFD;
@@ -107,7 +110,11 @@ main {
 .page {
   margin-inline: auto;
 }
+.page__content a {
+  color: #B46085;
+}
 .page__content p {
+  margin-block: 40px;
   margin-inline: auto;
   max-width: 780px;
 }

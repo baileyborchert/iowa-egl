@@ -99,9 +99,16 @@ main {
 .page {
   margin-inline: auto;
 
-  &__content p {
-    margin-inline: auto;
-    max-width: 780px;
+  &__content {
+    a {
+      color: $dark-pink;
+    }
+
+    p {
+      margin-block: 40px;
+      margin-inline: auto;
+      max-width: 780px;
+    }
   }
 
   &__title {

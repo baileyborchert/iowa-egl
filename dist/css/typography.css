@@ -26,5 +26,8 @@ p {
   font-size: 20px;
   text-align: justify;
 }
+p a {
+  text-decoration: underline;
+}
 
 /*# sourceMappingURL=typography.css.map */
